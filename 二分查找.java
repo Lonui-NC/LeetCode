@@ -20,7 +20,7 @@ class BSearchSum {
     int low = 0;
     int high = n - 1;
     while (low <= high) {
-      mid = low + ((high - low) >> 2);
+      mid = low + ((high - low) >> 1);
       if (a[mid] >= val) {
         high = mid;
       } else {
