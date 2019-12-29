@@ -15,12 +15,12 @@ import java.util.Set;
 // @lc code=start
 class Solution {
     // 其实原因是C63 没有完全覆盖所有情况
-    public List<List<Integer>> threeSum(int[] nums) {
+    public List<List<Integer>> threeSumV1(int[] nums) {
         List<Integer> item; 
         // by default would be set
         Set<List<Integer>> items = new HashSet<>();
         if (nums == null || nums.length <= 2) {
-            return items.toArray();
+            // return items.toArray();
         }
         // 基本思路对，问题在于如何去重 
         // 如果使用Java的话，那么先进行排序
@@ -45,7 +45,7 @@ class Solution {
                 }
             }
         }
-        return new ArrayList(items);
+        // return new ArrayList(items);
     }
 
     public List<Integer> constructItem(int a, int b, int c) {
@@ -55,6 +55,45 @@ class Solution {
         item.add(c);
         return item;
     }
+
+    public static List<List<Integer>> threeSum(int[] nums) {
+        // 所以最关键的一步还是需要数组排序
+        // Arrays.sort()
+        // Arrays.asList("a", "b", "c")
+        // 分析出了原理，解析了关键步骤，就OK了
+        List<List<Integer>> ans = new ArrayList<>();
+        int len = nums.length;
+        if (nums == null || nums.length < 3) {
+            return ans;
+        }
+        Arrays.sort(nums); // 排序， 关键一步
+        for(int i=0;i<len;i++) {
+            // 因为是从小到大去找，所以如果最小的已经大于0，那么就可以直接break了
+            if (nums[i] > 0) {
+                break;
+            }
+            if (i > 0 && nums[i] == nums[i-1]) continue; // 去重
+            // 双指针法，从头尾进行遍历
+            int L = i + 1;
+            int R = len - 1;
+            while (L < R) {
+                int sum = nums[i] + nums[L] + nums[R];
+                if (sum == 0) {
+                    ans.add(Arrays.asList(nums[i], nums[L], nums[R]));
+                    while (L<R && nums[L] == nums[L+1]) L++; //去重L
+                    while (L<R && nums[R] == nums[R-1]) R--; //去重R
+                    L++;
+                    R--;
+                } else if (sum > 0) {
+                    R--;
+                } else if (sum < 0) {
+                    L++;
+                }
+            }
+        }   
+        return ans;
+    }
+
 }
 // @lc code=end
 
