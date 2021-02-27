@@ -15,3 +15,7 @@ Have fun!
 二叉树
 * [94.二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/) - 递归方法
 * [104.二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/) - 递归方法
+
+2021-02-23
+二叉树
+* [95.不同的二叉搜索树](https://leetcode-cn.com/problems/unique-binary-search-trees/) - 回溯法 -> 分解成小问题，左右子树同样是二叉搜索树

@@ -6,10 +6,21 @@ Array Tips
 * 数组的长度是 arr.length
 * Arrays.sort => `Arrays.sort(nums, i, j);` -> 可以指定下标 同取值，下标值exclusive 
 * Arrays.sort(a,Collections.reverseOrder());-> 倒序
+* `int[] G = new int[n+1];`
 
 Math Tips
 * `res = Math.max(resLeft, resRight) + 1;`
 
+Foreach Tips
+```java
+for (TreeNode l : leftTrees) {
+    for (TreeNode r: rightTrees) {
+        curNode.left = l;
+        curNode.right = r;
+        result.add(curNode);
+    }
+}
+```
 
 String Tips
 * stringA.length() => 长度
@@ -47,6 +58,8 @@ class Solution {
     }
 }
 ```
+* 二叉搜索树 -> 回溯法 -> 二叉搜索树关键的性质是根节点的值大于左子树所有节点的值，小于右子树所有节点的值，且左子树和右子树也同样为二叉搜索树。
+
 
 递归 Tips
 * 所有的递归都能用回溯来实现 -> 需要用到栈的实现 -> 递归的本质就是栈！
