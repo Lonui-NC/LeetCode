@@ -19,3 +19,8 @@ Have fun!
 2021-02-23
 二叉树
 * [95.不同的二叉搜索树](https://leetcode-cn.com/problems/unique-binary-search-trees/) - 回溯法 -> 分解成小问题，左右子树同样是二叉搜索树
+* [96.不同的二叉搜索树-2](https://leetcode-cn.com/problems/unique-binary-search-trees/) - 卡特兰数 - 整理出递推公式即可求解
+
+2021-02-27
+二叉树 - [二叉树练习专栏](https://leetcode-cn.com/leetbook/read/data-structure-binary-tree/x63shc/)
+* 
