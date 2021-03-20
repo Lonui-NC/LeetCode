@@ -61,7 +61,33 @@ class Solution {
 * 二叉搜索树 -> 回溯法 -> 二叉搜索树关键的性质是根节点的值大于左子树所有节点的值，小于右子树所有节点的值，且左子树和右子树也同样为二叉搜索树。
 * 通常来说，对于二叉搜索树，我们可以通过中序遍历得到一个递增的有序序列。 我们将在另一张卡片（数据结构介绍 – 二叉搜索树）中再次提及。
 
-
-
 递归 Tips
 * 所有的递归都能用回溯来实现 -> 需要用到栈的实现 -> 递归的本质就是栈！
+二叉树递归实现栈 -> 参照递归的方式去思考！
+```java
+while(root != null || !stack.isEmpty()) { 
+      // 这个的作用在于遍历完所有的root和root的left！
+      while(root != null) {
+        stack.push(root);
+        // 永远先拿root的val
+        result.add(root.val);
+        root = root.left;
+      }
+      // 如果左边都遍历完，那么走右边的！
+      root = stack.pop().right;
+    }
+```
+
+Java 队列 - Queue
+* Queue 
+```java
+        Queue<TreeNode> queue1 = new LinkedList<TreeNode>();
+        Queue<TreeNode> queue2 = new LinkedList<TreeNode>();
+        queue1.offer(p);
+        queue2.offer(q);
+        while (!queue1.isEmpty() && !queue2.isEmpty()) {
+            TreeNode node1 = queue1.poll();
+            TreeNode node2 = queue2.poll();
+        return queue1.isEmpty() && queue2.isEmpty();
+```
+* LinkedList => add & addAll(Collection c)

@@ -23,4 +23,15 @@ Have fun!
 
 2021-02-27
 二叉树 - [二叉树练习专栏](https://leetcode-cn.com/leetbook/read/data-structure-binary-tree/x63shc/)
-* 
+
+### 3月进度汇总
+
+#### Target 
+* 14道leetcode
+* 4-6 chapters极客时间
+* 学习完Leetcode 二叉树章
+
+2021-03-14
+二叉树
+* [100.相同的树](https://leetcode-cn.com/problems/same-tree/) - done - 递归法实现
+* [基础 - 二叉树前序遍历](https://leetcode-cn.com/leetbook/read/data-structure-binary-tree/xeywh5/) - 学会使用正常的实现方式 - 模拟栈 - while循环
