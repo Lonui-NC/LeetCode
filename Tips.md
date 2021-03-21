@@ -37,6 +37,7 @@ for (int start = 0 ; start < N - L + 1; start++) {
 ```
 
 Stack Tips
+
 * [Java recommend to use `Deque` to replace `Stack`](https://chengfeng96.com/blog/2018/01/20/Java%E4%B8%AD%E7%94%A8Deque%E6%8E%A5%E5%8F%A3%E4%BB%A3%E6%9B%BFStack%E6%8E%A5%E5%8F%A3%E5%AE%8C%E6%88%90%E6%A0%88%E5%8A%9F%E8%83%BD/)
 * `Deque<Integer> stack = new ArrayDeque<Integer>();`
 * Deque可以由ArrayDeuqe或者LinkedList实现，它们两者使用的区别以及优劣也就是数组和链表的区别，你懂得。

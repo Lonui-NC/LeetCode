@@ -60,6 +60,7 @@ class Solution {
   public List<Integer> preorderTraversal(TreeNode root) {
     List<Integer> result = new ArrayList<>();
     Deque<TreeNode> stack = new ArrayDeque<>();
+
     // 所以结束条件是root为null，且stack为空！ -> 证明没有元素了
     while(root != null || !stack.isEmpty()) { 
       // 这个的作用在于遍历完所有的root和root的left！

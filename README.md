@@ -35,3 +35,10 @@ Have fun!
 二叉树
 * [100.相同的树](https://leetcode-cn.com/problems/same-tree/) - done - 递归法实现
 * [基础 - 二叉树前序遍历](https://leetcode-cn.com/leetbook/read/data-structure-binary-tree/xeywh5/) - 学会使用正常的实现方式 - 模拟栈 - while循环
+
+2021-03-21
+二叉树
+* [基础 - 二叉树中序遍历](https://leetcode-cn.com/leetbook/read/data-structure-binary-tree/xecaj6/) - 学会使用stack来做模拟 - dequeue.push + dequeue.pop
+* [98.验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/) - 迭代法构造额外的函数，加上上下限；或者中序遍历求解
+* [基础 - 二叉树后序遍历](https://leetcode-cn.com/leetbook/read/data-structure-binary-tree/xebrb2/) - 学会使用stack模拟
+
