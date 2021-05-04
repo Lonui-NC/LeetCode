@@ -2,6 +2,8 @@
 Have fun!
 
 # Progress 
+
+### 2月进度汇总
 2021-02-15/2020-02-16/2020-02-17
 数组 + 字符串
 * [26.删除排序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/submissions/) - 双指针法查询code
@@ -24,6 +26,8 @@ Have fun!
 2021-02-27
 二叉树 - [二叉树练习专栏](https://leetcode-cn.com/leetbook/read/data-structure-binary-tree/x63shc/)
 
+Summary: 9道
+
 ### 3月进度汇总
 
 #### Target 
@@ -42,3 +46,14 @@ Have fun!
 * [98.验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/) - 迭代法构造额外的函数，加上上下限；或者中序遍历求解
 * [基础 - 二叉树后序遍历](https://leetcode-cn.com/leetbook/read/data-structure-binary-tree/xebrb2/) - 学会使用stack模拟
 
+summary: 5道
+
+### 4月进度汇总
+#### Target 
+* 15 leetcode
+* 16 chapters极客时间 - 每周4 chapters
+
+二叉树
+* [101.对称二叉树](https://leetcode-cn.com/problems/symmetric-tree/) - 转化成如何判断两个树是对称树 -> 抽象转化
+
+summary: 1道

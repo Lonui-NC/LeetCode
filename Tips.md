@@ -90,5 +90,7 @@ Java 队列 - Queue
             TreeNode node1 = queue1.poll();
             TreeNode node2 = queue2.poll();
         return queue1.isEmpty() && queue2.isEmpty();
+        u = q.poll();
+        v = q.poll();
 ```
 * LinkedList => add & addAll(Collection c)
