@@ -94,3 +94,11 @@ Java 队列 - Queue
         v = q.poll();
 ```
 * LinkedList => add & addAll(Collection c)
+
+Java 集合 - Set
+* Set
+```java
+Set<Integer> set = new HashSet<Integer>();
+set.add(a);
+set.contains(b);
+```

@@ -1,7 +1,20 @@
 # LeetCode
 Have fun!
 
-# Progress 
+# New Progress 
+每周刷题1道，先刷高频题，按照标签来刷，每月一个标签！
+[LeetCode热题Top-100](https://leetcode-cn.com/problem-list/2cktkvj/)
+
+### 2022年3月进度汇总
+栈 - start from the stack!
+[32.最长有效括号](https://leetcode-cn.com/problems/longest-valid-parentheses/)
+[155.最小栈](https://leetcode-cn.com/problems/min-stack/)
+[653.两数之和 BST](https://leetcode-cn.com/problems/two-sum-iv-input-is-a-bst/)
+
+刷题先以java为base！同时记录tips和guide！
+
+
+# Old Progress 
 
 ### 2月进度汇总
 2021-02-15/2020-02-16/2020-02-17
